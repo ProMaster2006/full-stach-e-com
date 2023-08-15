@@ -1,0 +1,35 @@
+.footer {
+    @apply pb-[50px];
+}
+
+.info-block-footer {
+    &__item {
+        @apply text-[13px] leading-[140%];
+
+        &:not(:last-child) {
+            @apply mb-[6px];
+        }
+    }
+}
+
+.nav-footer {
+    @apply flex items-end flex-col;
+
+    &_tel {
+        @apply mb-[9px] text-[15px] leading-[140%];
+    }
+
+    &_email {
+        @apply mb-[30px] text-[15px] leading-[140%];
+    }
+}
+
+.group-icons-nav {
+    @apply mb-[15px];
+}
+
+@media(max-width: 768px) {
+    .footer {
+        @apply pb-[20px];
+    }
+}

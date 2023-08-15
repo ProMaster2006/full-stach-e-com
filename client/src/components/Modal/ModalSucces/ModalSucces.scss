@@ -1,0 +1,21 @@
+@import '../../../index.scss';
+
+.modal-succes {
+    @apply fixed top-0 left-0 w-[100%] h-[100%] bg-black/70 flex justify-center items-center;
+    
+    &__content {
+        @apply w-[600px] h-[270px] bg-white p-[70px] text-center;
+    }
+
+    &__title {
+        @apply text-[25px] leading-[140%] font-medium mb-[55px];
+    }
+
+    &__btn {
+        @apply border-[#6E9C9F] border py-[22px] px-[50px] text-[#6E9C9F] hover:text-[#6E9C9F] text-[17px] leading-[140%] hover:bg-[#6E9C9F] transition hover:text-white;
+    }
+}
+
+.hide {
+        @apply hidden;
+}

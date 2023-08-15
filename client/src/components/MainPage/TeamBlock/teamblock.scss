@@ -1,0 +1,29 @@
+.team-block {
+    
+    @apply pb-[120px];
+
+    &__title {
+        @apply text-[40px] font-medium leading-[110%] mb-[92px];
+    }
+}
+
+.content-team-block {
+
+    &__title {
+        @apply font-medium text-[25px] leading-[140%] mb-[28px];
+    }
+
+    &__text p {
+        @apply text-[17px] leading-[140%] font-medium;
+    } 
+}
+
+@media(max-width: 768px) {
+    .team-block {
+        @apply pb-[30px];
+    
+        &__title {
+            @apply  mb-[22px];
+        }
+    }
+}

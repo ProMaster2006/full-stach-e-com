@@ -1,0 +1,138 @@
+
+.header {
+
+    &__container {
+        @apply pt-[17px] pb-[40px];
+    }
+
+    &__content {
+        @apply flex  items-center justify-between;
+    }
+
+    &__group-buttons {
+        @apply  flex items-center justify-between;
+    }
+
+    &__btn {
+        @apply  mr-[10px] bg-[#6E9C9F] py-[8px] px-[12px] text-center hover:text-white hover:bg-[#509498] transition rounded-[2px] text-white text-[17px] leading-[140$];
+    }
+
+    &__basket {
+        @apply  cursor-pointer;
+    }
+
+    /* @media(max-width: 768px) {
+        & {
+            @apply fixed w-[100%] min-h-screen bg-[#17696A] order-[100];
+        }
+    } */
+}
+
+.nav-header {
+
+    @apply  flex ;
+
+    @media(max-width: 865px) {
+        & {
+            @apply flex-wrap;
+        }
+    }
+
+    &__item {
+        @apply leading-[140%] text-[15px] hover:text-[#6E9C9F] transition cursor-pointer active:text-[#6E9C9F];
+
+        &:not(:last-child) {
+            @apply mr-[45px];
+        }
+
+        @media(max-width: 955px) {
+            &:not(:last-child) {
+                @apply mr-[25px];
+            }
+        }
+        @media(max-width: 865px) {
+            & {
+                @apply flex-wrap;
+            }
+        }
+    }
+
+    /* @media(max-width: 768px) {
+        & {
+            @apply absolute top-[150px] ml-auto mr-auto flex-col justify-center;
+
+            &__item {
+                @apply text-[30px] text-white mr-0;
+
+                &:not(:last-child) {
+                    @apply mb-[45px];
+                }
+            }
+        }
+    } */
+}
+
+
+.info-header {
+    @apply flex relative items-center cursor-pointer;
+    &__tel {
+        @apply leading-[140%] text-[15px];
+
+        /* @media(max-width: 870px) {
+            & {
+                @apply hidden;
+            }
+        } */
+    }
+    img {
+
+    }
+}
+
+/* BURGER MENU */
+
+
+.burger-menu {
+    @apply hidden relative w-[35px] ml-[13px];
+}
+
+.burger-menu span , .burger-menu::after , .burger-menu::before {
+    @apply  block absolute left-0 w-[100%] h-[5px] bg-[#6E9C9F];
+}
+
+.burger-menu:after {
+    content: '';
+    @apply top-[-10px] rotate-0;
+}
+
+.burger-menu:before {
+    content: '';
+    @apply top-[10px] rotate-0;
+}
+
+.burger-menu__active, .burger-menu span {
+    @apply hidden;
+}
+
+.burger-menu__active, .burger-menu::before {
+    @apply rotate-[-45deg];
+}
+.burger-menu__active, .burger-menu::after {
+    @apply rotate-[45deg];
+}
+
+
+
+@media(max-width: 768px) {
+    .nav-header {
+        @apply hidden;
+    }
+
+    .info-header {
+        @apply hidden;
+    }
+    
+    .burger-menu {
+        @apply block;
+    }
+}

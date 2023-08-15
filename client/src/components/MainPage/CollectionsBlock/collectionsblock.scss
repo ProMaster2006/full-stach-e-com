@@ -1,0 +1,63 @@
+@import '../../../index.scss';
+
+.collections-block {
+
+    @apply pt-[180px] pb-[130px];
+
+    &_title {
+        @apply font-medium text-[40px] leading-[110%] mb-[92px]; 
+    }
+
+    &_items {
+        @apply mb-[60px];
+    }
+
+    &_btn {
+        @apply flex justify-center;
+        a {
+            @apply border border-[#6E9C9F] py-[22px] px-[50px] text-[17px] text-[#6E9C9F] leading-[138%] hover:bg-[#6E9C9F] hover:text-white transition;
+        }  
+    } 
+}
+
+.item-collectionsBlock {
+
+    @apply flex flex-col items-center;
+
+    &__img {
+        @apply mb-[24px]
+    }
+
+    &__title {
+        @apply font-medium text-[20px] leading-[140%] mb-[7px];
+    }
+
+    &__price {
+
+        span {
+            @apply line-through;
+        }
+
+        @apply font-medium text-[15px] text-[#998E78] leading-[140%]
+    }
+}
+
+@media(max-width: 768px) {
+    .collections-block {
+        @apply pt-[70px] pb-[45px];
+
+        &_title {
+            @apply mb-[42px];
+        }
+
+        &_items {
+            @apply mb-[20px];
+        }
+    }
+
+    .item-collectionsBlock {
+        &:not(:last-child) {
+            @apply mb-[20px]
+        }
+    }
+}

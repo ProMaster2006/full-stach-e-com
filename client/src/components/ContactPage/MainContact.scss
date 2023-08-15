@@ -1,0 +1,71 @@
+@import '../../index.scss';
+
+.main-contact {
+    @apply py-[100px];
+
+    &__title {
+        @apply font-medium text-[55px] leading-[110%] mb-[26px];
+    }
+
+    &__location {
+        @apply font-medium text-[17px] leading-[140%] pb-[50px];
+
+        span {
+            @apply text-[#919191] font-medium text-[17px];
+        }
+    }
+}
+
+.body-items {
+    
+    &__item {
+        @apply text-[17px] font-medium leading-[140%];
+
+        &:not(:Last-child) {
+            @apply mb-[19px];
+        }
+    }
+}
+
+.form-contact {
+    @apply mt-[100px];
+
+    &__title {
+        @apply font-medium text-[25px] leading-[140%] mb-[62px];
+    }
+
+    &__input {
+        @apply  border-b ;
+
+        &:not(:last-child) {
+            @apply mb-[35px];
+        }
+
+        input {
+            
+        }:focus {
+            @apply outline-none;
+        }
+    }
+    &__input {
+
+        &:not(:last-child) {
+            @apply mb-[35px];
+        }
+
+        input {
+            @apply relative;
+            &::after {
+                @apply bg-black absolute w-[50px] h-[1px] top-0 left-0;
+            }
+
+            &:focus {
+                @apply outline-none;
+            }
+        }
+    }
+
+    button {
+        @apply bg-[#6E9C9F] text-white py-[22px] px-[50px] hover:bg-[#509498] transition;
+    }
+}

@@ -1,0 +1,7 @@
+.my-button {
+    @apply flex justify-center text-white;
+
+       a { 
+        @apply text-white text-[17px] leading-[140%] bg-[#6E9C9F] py-[22px] px-[50px] m-auto hover:text-white hover:bg-[#509498] transition;
+       }
+}

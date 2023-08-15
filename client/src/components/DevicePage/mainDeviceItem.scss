@@ -1,0 +1,96 @@
+@import '../../index.scss';
+
+.main-device-page {
+    @apply pt-[110px] pb-[130px];
+}
+
+.item-main-device-page {
+
+    &__info {
+        @apply py-[110px];
+    }
+
+    &__title {
+        @apply font-medium text-[55px] leading-[110%] mb-[100px];
+    }
+
+    &__price {
+        @apply text-[#998E78] text-[40px] font-medium leading-[110%] mb-[59px];
+    }
+
+    &__form {
+
+        input {
+            @apply border border-[#AFAFAF] outline-none w-[68px] h-[68px] text-[20px] leading-[140%] p-[23px] mr-[11px];
+        }
+        
+        button {
+            @apply bg-[#6E9C9F] text-center py-[22px] px-[50px] text-[17px] leading-[140%] text-white hover:bg-[#509498] transition; 
+        }
+    }
+}
+
+.choose-size-item {
+    &__title {
+        @apply text-[20px] leading-[140%] font-medium mb-[34px]; 
+    }
+
+    &__items {
+        @apply flex mb-[59px];
+        label {
+            @apply border text-center border-black ml-[15px];
+
+            input[type=radio] {
+                @apply absolute left-[-99999999px];
+
+                &[type=radio]:checked + span {
+                    @apply bg-black text-white transition;
+                }
+            }     
+
+            span {
+                @apply block font-medium text-[17px] leading-[140%] py-[10px] px-[15px] cursor-pointer;
+            }
+        }
+    }
+}
+
+.choose-color-item {
+    @apply mb-[59px];
+    &__title {
+        @apply text-[20px] leading-[140%] font-medium mb-[34px]; 
+    }
+}
+
+
+.choose-color {
+    &_item-select {
+        input[type=radio] {
+            @apply absolute left-[-99999999px];
+
+            &[type=radio]:checked + div {
+                @apply border border-black transition;
+            }
+        }
+
+        div {
+            @apply w-10 h-10 rounded-[50%] mr-[15px] cursor-pointer;
+        }
+
+        .gray {
+            @apply bg-[#927876];    
+        }
+
+        .blue {
+            @apply bg-[#D4D4D4];    
+        }
+
+        .pink {
+            @apply bg-[#FD9696];    
+        }
+
+        .yellow {
+            @apply bg-[#FDC796];    
+        }
+    }
+}

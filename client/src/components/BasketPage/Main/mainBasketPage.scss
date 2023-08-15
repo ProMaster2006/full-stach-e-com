@@ -1,0 +1,18 @@
+@import '../../../index.scss';
+
+
+.main-block-basket-page {
+    @apply pt-[150px];
+
+    &__title {
+        @apply text-[55px] font-medium leading-[110%] mb-[26px]; 
+    }
+
+    &__location {
+        @apply mb-[200px];
+    }
+
+    &__item {
+        @apply text-[20px] font-medium leading-[140%];
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../../index.scss';
+
+.modal-login {
+    @apply hidden fixed top-0 left-0 w-[100%] h-[100%] justify-center bg-black/70 items-center;
+
+    &__content {
+        @apply w-[400px] h-[300px] bg-white  rounded-[5px] flex justify-center flex-col p-[15px];
+    }
+
+    &__title {
+        @apply text-center;
+    }
+
+    &__form {
+        @apply flex justify-center items-center flex-col;
+
+        input {
+            @apply outline-none;
+        }
+    }
+}
+
+.active {
+    @apply flex;
+}

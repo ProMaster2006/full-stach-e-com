@@ -1,0 +1,63 @@
+@import '../../../index.scss';
+
+.main-block {
+    @apply pt-[90px] pb-[60px];
+
+    &__title {
+        @apply font-medium text-[55px] leading-[110%] mb-[23px]; 
+    }
+
+    &__location {
+        @apply font-medium text-[17px] leading-[140%] mb-[214px];
+    }
+
+    &__count-item {
+        @apply text-[#808080] font-medium text-[17px] leading-[140%] mb-[65px];
+    }
+}
+
+.types-main-block {
+
+    @apply mb-[92px];
+
+    &__item {
+        @apply border border-black py-[19px] px-[65px] text-center text-[17px] font-medium leading-[140%] ml-[15px] cursor-pointer;
+
+        &:active {
+            @apply text-white bg-black transition;
+        }
+
+        &:hover {
+            @apply text-white bg-black transition;
+        }
+    }
+}
+
+.main-block__items {
+
+}
+
+
+.item-main-block {
+
+    @apply flex flex-col items-center cursor-pointer;
+
+    &:not(:last-child) {
+        @apply mr-[30px];
+    }
+
+    &__img {
+        @apply mb-[24px];
+        img {
+         
+        }
+    }
+
+    &__title {
+        @apply font-medium text-[20px] leading-[140%];
+    }
+
+    &__price {
+        @apply text-[#998E78] text-[15px] font-medium leading-[140%];
+    }
+}

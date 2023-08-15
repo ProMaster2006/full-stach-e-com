@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.container {
+    @apply flex justify-center;
+}
+
+.spinner {
+    @apply w-[100px] h-[100px] border-dashed border-[5px] border-blue-500 animate-spin rounded-[100%];
+}

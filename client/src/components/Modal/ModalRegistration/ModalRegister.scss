@@ -1,0 +1,35 @@
+@import '../../../index.scss';
+
+
+.modal-register {
+   @apply fixed top-0 left-0 h-[100%] w-[100%] bg-black/70 hidden;
+
+   &__content {
+    @apply w-[490px] bg-white p-[48px] pt-[8px] rounded-[5px];
+   }
+
+   &__close {
+    @apply flex justify-end cursor-pointer p-0;
+   }
+}
+
+.header-modal-register {
+    &__title {
+        @apply text-[28px] leading-[150%] text-[#1E212C] text-center mb-[24px] font-bold;
+    }
+
+    &__label {
+        @apply text-[14px] text-[#787A80] leading-[150%] text-center mb-[24px];
+    }
+}
+
+
+.form {
+    &_btn {
+        @apply bg-[#17696A] text-[white] rounded-[4px] w-[400px] min-h-[40px] text-center mb-[24px];
+    }
+}
+
+.show {
+    @apply flex justify-center items-center ;
+}
